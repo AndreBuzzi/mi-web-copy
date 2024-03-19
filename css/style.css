@@ -1,0 +1,618 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #723B3B;
+    font-family: Nunito;
+}
+
+/*Header general*/
+header div{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30%;   
+    padding: 3%;
+}
+.logo{
+    width: 25%;
+    height: 10%;
+}
+.titulo{
+    width:70%;
+    height: 20%;
+    display: none;
+    margin: 0 -30% 0 -27%;
+}
+.copita{
+    width: 12%;
+    height: 1%;
+}
+
+/*Header segundas paginas*/
+.otras-pag{
+    display: flex;
+    background-color:#cfbea9;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+}
+.segundo-titulo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: Anonymous Pro;
+    font-size: 0.9rem;
+}
+.volver{
+    font-size: 0.5rem;
+}
+
+/*Main primera pagina*/
+main{
+    background-color: #925959;
+}
+.menu{
+    background-color: #502828;
+    font-size: 80%;
+    padding: 8px;
+}
+.menu nav ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+    font-family: Anonymous Pro;
+    gap: 10%;
+}
+.menu nav ul a:visited{
+    color:#cfbea9;
+    text-decoration: none;
+}
+.volver:visited{
+    color: #502828;
+}
+.volver:active{
+    color: #502828;
+}
+a:active{
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: wavy;
+}
+
+    /*Cuerpo*/
+#foto-principal{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.texto{
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: left;
+    padding: 2% 4% 0 4%;
+}
+.principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35% 5%; 
+}
+.muestreo{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 23% 23% 23% 23%;
+    row-gap: 2%;
+    text-align: start;
+    margin-top: -70%;
+}
+.menu-principal{
+    width: 75%;
+    height: 100%;
+    margin-left: 12%;
+    font-size: medium;
+    object-fit: contain;
+    background-color: #cfbea9;
+    border: #cfbea9 2rem solid;
+}
+.muestreo .menu-principal a:active{
+    color: #502828;
+    font-weight: bold;
+}
+.muestreo .menu-principal a:visited{
+    color: #502828;
+}
+.muestreo .menu-principal a:hover{
+    text-decoration: wavy;
+}
+.tt{
+    font-size: small;
+}
+
+
+/*Main Nuestra Cava*/
+.main-especial{
+    background-color: #925959;
+    padding-bottom: 5%;
+}
+.texto-general{
+    font-style: italic;
+    text-align: center;
+    font-family: Nunito;
+    margin: 5% 5%;
+    font-size: small;
+}
+.cava {
+    width: 75%;
+    height: 100%;
+    border: #723B3B 0.25cm solid;
+    object-fit: cover;
+}
+.muestreo-vinos{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 40%;
+    margin-left: 10%;
+    font-family: Nunito;
+    column-gap: 5%;
+    row-gap: 10%;
+}
+.click a img:hover{
+    border-color:#502828;
+    border-top-left-radius: 30px;
+}
+.link-productos{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    font-family: Nunito;
+    font-size: small;
+}
+
+/*Main Info que te sirve*/
+.info{
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    border: #723B3B 0.25cm solid;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.muestreo-info{
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    margin: 0 5% 0 5%;
+    font-family: Nunito;
+    column-gap: 5%;
+    row-gap: 19%;
+}
+.que-es{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    font-family: Nunito;
+    font-size: small;
+    margin-left: 15%;
+}
+.comentario{
+   margin: 65% 5% 0 5%;
+   font-family: Nunito;
+}
+#coment{
+    justify-content: center;
+    margin: 0 2% 0 2%;
+}
+#texto-comentario{
+    font-size: small;
+}
+/*Main Como comprar*/
+.iconos{
+    width: 75%;
+    height: 50%;
+    object-fit: contain;
+    justify-content: center;
+    align-items: baseline;
+}
+.datos{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color:#925959;
+    height: 33vh;
+    padding-top: 5%;
+    
+}
+.comprar{
+    list-style: circle;
+    margin-left: 10%;
+    font-size: 0.8rem;
+}
+.mapa{
+    background-color: #cfbea9;
+    align-items: center;
+    display: grid;
+    padding: 0 4% 0 4%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  #datos-cliente{
+    grid-row: 1 / 3;
+    margin-left: 5%;
+  }
+ .redes a img:hover{
+    width: 100%;
+ }
+  
+  #correo{
+    grid-column: -2 / -1;
+  }
+#fondo-mapa{
+    width: 250px;
+    position: relative;
+    bottom: 7cm;
+    left: 25cm;
+    display: none;
+}
+
+/*Main Seleccion del mes*/
+.seleccion{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 15%;
+}
+.seleccionados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0% 5% 0 5%;
+    column-gap: 15%;
+    text-align: center;
+}
+.reseña a:hover{
+    text-decoration: wavy;
+    font-size: larger;
+}
+.reseña a:active{
+    font-weight: bold;
+}
+.reseña a:visited{
+    color:#502828;
+}
+
+#ayuda{
+    margin: 25% 5% 0 5%; 
+    text-align: center; 
+    font-size: small;
+}
+.estrellas{
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 50%);
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;  
+}
+.spotify{
+    margin-top: 20%;
+    background-color: #cfbea9
+}
+#pre-spotify{
+    display: flex;
+    text-align: center;
+    font-size: medium;
+    padding: 5% ;
+    font-family: Nunito;
+}
+#lista-spo{
+    height: 50%;
+    width: 75%;
+    margin-left: 15%;
+}
+#img-spoty{
+    width: 260px;
+    height: 220px;
+    z-index: 1;
+    position: absolute;
+    top: 28cm;
+    right: 1cm;
+    display: none;
+}
+
+/*Footer de todas las paginas*/
+.footer {
+    background-color: #502828;
+    font-size: small;
+    padding: 5% 0 5% 0;
+}
+.footer a:active{
+    font-weight: bold;
+    color: #cfbea9;
+}
+.footer a:hover{
+    text-decoration: wavy;
+}
+.footer a:visited{
+    color: #cfbea9;
+}
+#derechos{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-family: Anonymous Pro;
+    color: #cfbea9;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+}
+#whatsapp{
+    width: 10%;
+    position: fixed;
+    top: 81%;
+    right: 1%;
+}
+
+/*MEDIA QUERYS*/
+
+/*Adaptado a tablet (minimo 500px)*/
+@media screen and (min-width: 500px) {
+    header div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+    }
+    .logo{
+        width: 15%;
+        height: 10%;
+    }
+    .titulo{
+        display: block;
+    }
+    .copita{
+        width: 8%;
+        height: 1%;
+    }
+    .menu{
+        font-size: 90%;
+        padding: 12px;
+    }
+    .texto{
+        font-size: medium;
+    }
+    .otras-pag {
+        padding: 1.5%;
+    }
+    .segundo-titulo{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-family: Anonymous Pro;
+        font-size: 1.5rem;
+    }
+    .volver{
+        font-size: 1rem;
+    }
+    .texto-general{
+        font-size: medium;
+    }
+    .comentario{
+        margin-top: 40%;
+    }
+    .link-productos{
+        font-size: large;
+        text-align: center;
+    }
+    .que-es{
+        font-size: large;
+        text-align: center;
+        margin-left: 10%;
+    }
+    #ayuda{
+        margin: 25% 5% 0 5%; 
+        text-align: center; 
+        font-size: large;
+    }
+    .footer{
+        padding-bottom:  5%;
+        font-size: medium;
+    }
+    #whatsapp{
+        width: 10%;
+        position: fixed;
+        top: 73%;
+        right: 2%;
+    }
+}
+
+/*Adaptado a Ipad (minimo 700px)*/
+@media screen and (min-width: 700px){
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .muestreo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 23% 23% 23% 23%;
+        row-gap: 2%;
+        text-align: start;
+        margin-top: 1%;
+    }
+    .otras-pag {
+        padding: 1.7%;
+    }
+    .segundo-titulo{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-family: Anonymous Pro;
+        font-size: 2rem;
+    }
+    .volver{
+        font-size: 1.2rem;
+    }
+    .texto-general{
+        font-size: large;
+    }
+    .link-productos{
+        font-size: x-large;
+    }
+    .que-es{
+        font-size: x-large;
+    }
+    .cava{
+        height: 80%;
+    }
+    .muestreo-vinos{
+        row-gap: 6%;
+    }
+    .info{
+        height: 80%;
+    }
+    .muestreo-info{
+        row-gap: 5%;
+        margin-bottom: -17%;
+    }
+    #texto-comentario{
+        font-size: medium;
+    }
+    #ayuda{
+        margin: 25% 5% 0 5%; 
+        text-align: center; 
+        font-size: x-large;
+    }
+    .reseña{
+        font-size: larger;
+    }
+    #pre-spotify{
+        justify-content: center;
+    }
+    .datos{
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color:#925959;
+        height: 33vh;
+        padding-top: 5%;
+        margin-bottom: 10%;
+    }
+    #datos-cliente{
+        font-size: large;
+    }
+    .comprar{
+        font-size: medium;
+    }
+    .footer{
+        font-size: large;
+    }
+
+}
+
+/*Adaptado a desktop (minimo 1024px)*/
+@media screen and (min-width: 1024px) {
+    .otras-pag {
+        padding: 2%;
+        margin-top: -1%;
+    }
+    .segundo-titulo{
+        font-size: 2rem;
+    }
+    .volver{
+        font-size: 1.8rem;
+    }
+    .menu{
+        font-size: larger;
+    }
+    .texto-general{
+        font-size: x-large;
+    }
+    .cava{
+        width: 75%;
+        height: 75%;
+    }
+    .muestreo-vinos{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        margin-bottom: -3%;   
+        margin-right: 5%;  
+    }
+    .info{
+        height: 90%;
+    }
+    .muestreo-info{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        margin-bottom: -30%;
+    }
+    #cuadro-comentarios{
+        width: 70%;
+    }
+    #datos-cliente{
+        font-size: x-large;
+    }
+    .iconos{
+        width: 55%;
+        height: 45%;
+    }
+    .datos{
+        grid-template-columns: 4fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding-bottom: -10%;        
+    }
+    .comprar{
+        font-size: 1rem;
+    }
+    #mapa-doc{
+        width: 40%;
+    }
+    .seleccion{
+        width: 70%;
+        height: 70%;
+    }
+    #ayuda{
+        margin: -1% 0 -5% 0;
+        font-size: larger;
+    }
+    .estrellas{
+       margin-bottom: -15%;
+    }
+    #lista-spo{
+        width: 40%;
+        margin-left: 30%;
+    }
+    .footer{
+        height: 30vh;
+    }
+    #whatsapp{
+        width: 8%;
+        position: fixed;
+        top: 52%;
+        right: 1%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
